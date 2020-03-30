@@ -15,7 +15,7 @@ Open up a terminal (*command prompt on Windows*) and run the following npm comma
 npm start
 ```
 
-## Running a Production build
+## How to run a production build
 
 Once again open up a terminal and run the following command.
 
