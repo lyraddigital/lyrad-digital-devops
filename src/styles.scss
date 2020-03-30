@@ -1,0 +1,39 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$aussie-theme-primary: mat-palette($mat-green);
+$aussie-theme-accent:  mat-palette($mat-yellow);
+$aussie-theme-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$aussie-theme: mat-light-theme($aussie-theme-primary, $aussie-theme-accent, $aussie-theme-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($aussie-theme);
+
+html, body { height: 100%; }
+body { 
+    display: grid;
+    background: #EFEFEF;
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+/* Toolbar */
+.mat-toolbar.mat-primary {
+    color: map_get($aussie-theme-accent, 50);
+    background: map_get($aussie-theme-primary, 600);
+    z-index: 10;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+
+.mat-card-title {
+    color: map_get($aussie-theme-primary, 800);
+}
+
+.mat-raised-button.mat-primary {
+    color: map_get($aussie-theme-accent, 50);
+}

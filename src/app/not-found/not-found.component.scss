@@ -1,0 +1,18 @@
+@import 'src/styles.scss';
+
+:host {
+    flex: 1 0 0;
+    display: flex;
+
+    #not-found-container {
+        flex: 1 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            color: map_get($aussie-theme-primary, 900);
+            font-size: 2.5rem;
+        }
+    }
+}

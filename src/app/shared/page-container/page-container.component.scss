@@ -1,0 +1,39 @@
+@import 'src/styles.scss';
+
+:host {
+    flex: 1 0 0;
+    display: flex;
+
+    main {
+        flex: 1 0 0;
+        display: grid;
+        grid-template-rows: 64px 1fr;
+
+        > header {
+            display: flex;
+            align-items: center;
+            background: map_get($aussie-theme-accent, 200);
+            padding: 16px;
+    
+            > img {
+                width: 28px;
+                height: 28px;
+                margin-right: 10px;
+            }
+    
+            > h2 {
+                margin: 0;
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: map_get($aussie-theme-primary, 900);
+            }
+        }
+    
+        > .page-content {
+            flex: 1 0 0;
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+        }
+    }
+}

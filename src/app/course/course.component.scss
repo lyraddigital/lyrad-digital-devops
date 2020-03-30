@@ -1,0 +1,27 @@
+:host {
+    display: flex;
+    position: relative;
+
+    .mat-card-content {
+        flex: 1 0 0;
+    }
+
+    .centered-buttons {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    :host {
+        min-height: 450px;
+        max-height: 450px;
+
+        .centered-buttons {
+            position: absolute;
+            left: 16px;
+            right: 16px;
+            bottom: 16px;
+        }
+    }
+}
