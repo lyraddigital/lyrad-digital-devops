@@ -9,9 +9,10 @@ This project is used to show how to deploy a static website to AWS.
 
 ## How to run locally
 
-Open up a terminal (*command prompt on Windows*) and run the following npm command.
+Open up a terminal (*command prompt on Windows*) and run the following npm commands.
 
 ```
+npm install
 npm start
 ```
 
